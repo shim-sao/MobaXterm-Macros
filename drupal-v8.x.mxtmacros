@@ -5,6 +5,10 @@
 110 - Drupal - Install Create Project $DRUPAL_PROJECT 8.x-dev=12:0:0:composer create-project drupal-composer/drupal-project__DBLDOT__8.x-dev $DRUPAL_PROJECT --no-dev --no-progress --stability dev --no-interaction|258:13:1835009:RETURN|0:0:0:SLEEPEQUAL1200|
 111 - Drupal - Install Create Settings $DRUPAL_PROJECT 8.x-dev=12:0:0:mkdir $DRUPAL_PROJECT/sites|258:13:1835009:RETURN|12:0:0:mkdir $DRUPAL_PROJECT/sites/default|258:13:1835009:RETURN|12:0:0:mkdir $DRUPAL_PROJECT/sites/default/files|258:13:1835009:RETURN|12:0:0:chmod 0777 $DRUPAL_PROJECT/sites/default/files|258:13:1835009:RETURN|12:0:0:touch $DRUPAL_PROJECT/sites/default/settings.php|258:13:1835009:RETURN|12:0:0:chmod 0666 $DRUPAL_PROJECT/sites/default/settings.php|258:13:1835009:RETURN|0:0:0:SLEEPEQUAL1200|
 112 - Drupal - Install Create Config Sync $DRUPAL_PROJECT 8.x-dev=12:0:0:mkdir $DRUPAL_PROJECT/config|258:13:1835009:RETURN|12:0:0:mkdir $DRUPAL_PROJECT/config/sync|258:13:1835009:RETURN|12:0:0:chmod 0777 $DRUPAL_PROJECT/config/sync|258:13:1835009:RETURN|0:0:0:SLEEPEQUAL1200|
+120 - Drupal - chmod 444 $DRUPAL_PROJECT/sites/default/settings.php=12:0:0:chmod 444 $DRUPAL_PROJECT/sites/default/settings.php|258:13:1835009:RETURN|0:0:0:SLEEPEQUAL1200|
+120 - Drupal - chmod 644 $DRUPAL_PROJECT/sites/default/settings.php=12:0:0:chmod 644 $DRUPAL_PROJECT/sites/default/settings.php|258:13:1835009:RETURN|0:0:0:SLEEPEQUAL1200|
+121 - Drupal - chmod 444 $DRUPAL_PROJECT/web/sites/default/settings.php=12:0:0:chmod 444 $DRUPAL_PROJECT/web/sites/default/settings.php|258:13:1835009:RETURN|0:0:0:SLEEPEQUAL1200|
+121 - Drupal - chmod 644 $DRUPAL_PROJECT/web/sites/default/settings.php=12:0:0:chmod 644 $DRUPAL_PROJECT/web/sites/default/settings.php|258:13:1835009:RETURN|0:0:0:SLEEPEQUAL1200|
 
 [MacrosHotkeys]
 010 - Define DRUPAL_PROJECT=0
@@ -13,3 +17,7 @@
 110 - Drupal - Install Create Project $DRUPAL_PROJECT 8.x-dev=0
 111 - Drupal - Install Create Settings $DRUPAL_PROJECT 8.x-dev=0
 112 - Drupal - Install Create Config Sync $DRUPAL_PROJECT 8.x-dev=0
+120 - Drupal - chmod 444 $DRUPAL_PROJECT/sites/default/settings.php=0
+120 - Drupal - chmod 644 $DRUPAL_PROJECT/sites/default/settings.php=0
+121 - Drupal - chmod 444 $DRUPAL_PROJECT/web/sites/default/settings.php=0
+121 - Drupal - chmod 644 $DRUPAL_PROJECT/web/sites/default/settings.php=0
