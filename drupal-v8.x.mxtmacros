@@ -1,0 +1,15 @@
+[Macros]
+010 - Define DRUPAL_PROJECT=12:0:0:DRUPAL_PROJECT__EQQUAL__|0:0:0:WAITFOREQUALDRUPAL_PROJECT|0:0:0:SLEEPEQUAL1200|
+011 - Cd DRUPAL_PROJECT=12:0:0:cd $DRUPAL_PROJECT|258:13:1835009:RETURN|0:0:0:SLEEPEQUAL1200|
+012 - Echo DRUPAL_PROJECT=12:0:0:echo $DRUPAL_PROJECT|258:13:1835009:RETURN|0:0:0:SLEEPEQUAL1200|
+110 - Drupal - Install Create Project $DRUPAL_PROJECT 8.x-dev=12:0:0:composer create-project drupal-composer/drupal-project__DBLDOT__8.x-dev $DRUPAL_PROJECT --no-dev --no-progress --stability dev --no-interaction|258:13:1835009:RETURN|0:0:0:SLEEPEQUAL1200|
+111 - Drupal - Install Create Settings $DRUPAL_PROJECT 8.x-dev=12:0:0:mkdir $DRUPAL_PROJECT/sites|258:13:1835009:RETURN|12:0:0:mkdir $DRUPAL_PROJECT/sites/default|258:13:1835009:RETURN|12:0:0:mkdir $DRUPAL_PROJECT/sites/default/files|258:13:1835009:RETURN|12:0:0:chmod 0777 $DRUPAL_PROJECT/sites/default/files|258:13:1835009:RETURN|12:0:0:touch $DRUPAL_PROJECT/sites/default/settings.php|258:13:1835009:RETURN|12:0:0:chmod 0666 $DRUPAL_PROJECT/sites/default/settings.php|258:13:1835009:RETURN|0:0:0:SLEEPEQUAL1200|
+112 - Drupal - Install Create Config Sync $DRUPAL_PROJECT 8.x-dev=12:0:0:mkdir $DRUPAL_PROJECT/config|258:13:1835009:RETURN|12:0:0:mkdir $DRUPAL_PROJECT/config/sync|258:13:1835009:RETURN|12:0:0:chmod 0777 $DRUPAL_PROJECT/config/sync|258:13:1835009:RETURN|0:0:0:SLEEPEQUAL1200|
+
+[MacrosHotkeys]
+010 - Define DRUPAL_PROJECT=0
+011 - Cd DRUPAL_PROJECT=0
+012 - Echo DRUPAL_PROJECT=0
+110 - Drupal - Install Create Project $DRUPAL_PROJECT 8.x-dev=0
+111 - Drupal - Install Create Settings $DRUPAL_PROJECT 8.x-dev=0
+112 - Drupal - Install Create Config Sync $DRUPAL_PROJECT 8.x-dev=0
